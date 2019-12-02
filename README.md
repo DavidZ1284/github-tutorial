@@ -23,7 +23,7 @@ a cloud based system that focuses on the collaboration side of projects between 
 * To add a file to the stage use the command `git add .`.
 * Then you can commit the file by using `git commit -m "commit message"`.
 * On github.com, create a new repository and make its name the same as the one in your ide.
-* After you have done that, Make sure the link under quick setup is the SSH key.
+* After you have done that, make sure the link under quick setup is the SSH key.
 * Then, copy the 2 links under "push to an existing repository" and paste them individually to your ide.
 * Once you are done with that use can use `git push` to send your current and future commits to that local repository that you just created.  
 
@@ -31,8 +31,21 @@ _(Make sure to use `git status` before you add, after you add, and after you com
 
 ---
 ## Workflow & Commands
+The workflow order of Git is pretty simple:
+* make changes
+* `git status`
+* `git add .`
+* `git commit -m "message"`
+* `git push`
+* repeat
 
+Even though `git status` is shown once, it is recommended that it be used after each of the commands displayed to track the files that have been changed
 
+`git status` is basically used to see if a file is being tracked/observed or not. It will show the user what state the file is in and can display whether or not changes were made to that specific file.
+
+`git add .` puts the directory on to the stage, which includes the files that have changes within them to get ready for a commit.
+
+`git commit -m "message"` saves a copy of the files on the stage, including the changes (The message should be in the present-tense and describe the changes made).
 
 ---
 ## Rolling Back Changes
