@@ -25,8 +25,9 @@ a cloud based system that focuses on the collaboration side of projects between 
 * On github.com, create a new repository and make its name the same as the one in your ide.
 * After you have done that, Make sure the link under quick setup is the SSH key.
 * Then, copy the 2 links under "push to an existing repository" and paste them individually to your ide.
-* Once you are done with that use can use `git push` to send your current and future commits to that local repository that you just created.
+* Once you are done with that use can use `git push` to send your current and future commits to that local repository that you just created.  
 
+_(Make sure to use `git status` before you add, after you add, and after you commit)_
 
 ---
 ## Workflow & Commands
