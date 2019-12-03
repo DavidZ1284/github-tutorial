@@ -11,7 +11,11 @@ a cloud based system that focuses on the collaboration side of projects between 
 
 ---
 ## Initial Setup
+Before starting to set up your ide, you need to create your own Github account. You will need to create a username (for HSTAT students use mail but don't include "@hstat.org"). Then, you will need to set up a password that you will remember (HSTAT students should use their student ID and their first intial). After that, you will need to foolow the prompts given to complete the setup your account.
 
+For detailed instructions to setup your ide [click here](https://github.com/hstatsep/ide50)
+
+The SSH key is important because it is like an extra layer of security so that you don't have to enter your username and password everytime you want to connect to Github. You only need to authorize the account and you will be able to connect it easily to the SSH key and Github.
 
 
 ---
