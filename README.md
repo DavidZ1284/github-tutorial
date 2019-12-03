@@ -49,3 +49,13 @@ Even though `git status` is shown once, it is recommended that it be used after 
 
 ---
 ## Rolling Back Changes
+Rolling back changes is the equivalent of undoing your mistakes. This includes undoing commits, edits and removing a file from the stage.
+* To undo an **edit** that you made to a file, use `git checkout -- <file>`. You can also get a hint for this command by using `git status` and looking at the top section. However, make sure not to include `...` and `<>`when typing in the command (applies to most of commands listed).
+* If you want to **unstage** a file (undo add), use `git reset HEAD <file>` and it will remove that specific file from the staging area.
+ 
+There are different commands to undo a commit, depending on which situation you have (using `git status` won't give you hints to undo commits):  
+* To undo **only** the commit but leave the edits and the file on the staging area, use `git reset --soft HEAD~1`. This will get rid of your previous commit while leaving the file on the staging area with its changes.
+* To undo a commit **and** add, use `git reset HEAD~1`. This goes back to a previous commit but leaves your changes that you've made in the current commit while unstaging the file as well.
+* To **completely destroy** a commit, use `git reset --hard HEAD~1`. This will completely erase the current commit and leave no trace of it behind (This is a very dangerous command, so make sure you actually want to destroy the commit before using it).
+
+One more command that is useful to revert changes is `git revert SHA`. This command is used to revert changes that a commit has previously made. Use `git log` to look at your past history of commits. The SHA code is the yellow text that appears right next to the word "commit" and you only need to put the first 7 letter/digits. By doing this, the changes that a certain commit has made will be deleted while the changes from other commits remain the same.
